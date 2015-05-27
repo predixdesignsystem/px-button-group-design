@@ -4,7 +4,7 @@ Predix Experience Button Group module is an implementation of button groups, eit
 
 ## Demo
 
-You can review toggle styles and recommended markup here: https://github.build.ge.com/pages/PXd/px-button-group-design
+You can review button group styles and recommended markup here: https://github.build.ge.com/pages/PXd/px-button-group-design
 
 ## Dependencies
 
