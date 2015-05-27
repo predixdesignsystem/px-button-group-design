@@ -10,7 +10,7 @@ You can review toggle styles and recommended markup here: https://github.build.g
 
 Px's Button Group module depends on two other PXd modules:
 
-* [px-buttons-design](https://github.build.ge.com/PXd/px-colors-design)
+* [px-buttons-design](https://github.build.ge.com/PXd/px-buttons-design)
 * [px-helpers-design](https://github.build.ge.com/PXd/px-helpers-design)
 
 ## Installation
