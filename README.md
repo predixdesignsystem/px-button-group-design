@@ -10,11 +10,12 @@ You can review button group styles and recommended markup here: https://github.b
 
 You can review Sass Documentation here: https://github.build.ge.com/pages/PXd/px-button-group-design/sassdoc
 
-## Dependency
+## Dependencies
 
 Px's Button Group module depends on two other PXd modules:
 
 * [px-buttons-design](https://github.build.ge.com/PXd/px-buttons-design)
+* [px-helpers-design](https://github.build.ge.com/PXd/px-helpers-design)
 
 ## Upstream dependency
 
