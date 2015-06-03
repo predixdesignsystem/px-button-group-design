@@ -6,12 +6,21 @@ Predix Experience Button Group module is an implementation of button groups, eit
 
 You can review button group styles and recommended markup here: https://github.build.ge.com/pages/PXd/px-button-group-design
 
-## Dependencies
+## Sass Documentation
+
+You can review Sass Documentation here: https://github.build.ge.com/pages/PXd/px-button-group-design/sassdoc
+
+## Dependency
 
 Px's Button Group module depends on two other PXd modules:
 
 * [px-buttons-design](https://github.build.ge.com/PXd/px-buttons-design)
-* [px-helpers-design](https://github.build.ge.com/PXd/px-helpers-design)
+
+## Upstream dependency
+
+The Button Group module is also an upstream dependency in this meta kit:
+
+* [px-meta-buttons-design](https://github.build.ge.com/PXd/px-meta-buttons-design)
 
 ## Installation
 
