@@ -1,6 +1,6 @@
 {
   "name": "px-button-group-design",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "authors": [
     "General Electric"
   ],
@@ -22,7 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "px-buttons-design": "git://github.build.ge.com/PXd/px-buttons-design.git#~0.2.0",
+    "px-buttons-design": "git://github.build.ge.com/PXd/px-buttons-design.git#~0.3.0",
     "px-helpers-design": "git://github.build.ge.com/PXd/px-helpers-design.git#~0.1.0"
   },
   "devDependencies" : {
