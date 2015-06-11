@@ -36,6 +36,9 @@ $inuit-btn-group-border-color--pressed  : transparent !default;
   .#{$inuit-btn-group-namespace}btn-group,
   %#{$inuit-btn-group-namespace}btn-group {
     display: flex;
+    input {
+      @include accessibility;
+    }
     .#{$inuit-btn-namespace}btn,
     %#{$inuit-btn-namespace}btn {
       border-radius: 0;
