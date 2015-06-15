@@ -4,8 +4,8 @@
 /// @group px-button-group-design
 ////
 
-@import "../px-helpers-design/generic.helpers";
-@import "../px-buttons-design/objects.buttons";
+@import "px-helpers-design/_generic.helpers.scss";
+@import "px-buttons-design/_objects.buttons.scss";
 
 /// @type String [default] - Prepend value for all generated classes
 $inuit-btn-group-namespace              : $inuit-namespace !default;
@@ -31,50 +31,47 @@ $inuit-btn-group-border-color--hover    : transparent !default;
 /// @type Color [default] - Pressed border color
 $inuit-btn-group-border-color--pressed  : transparent !default;
 
-@if import-once('objects.button-group') {
   
-  .#{$inuit-btn-group-namespace}btn-group,
-  %#{$inuit-btn-group-namespace}btn-group {
-    display: flex;
-    input {
-      @include accessibility;
+.#{$inuit-btn-group-namespace}btn-group,
+%#{$inuit-btn-group-namespace}btn-group {
+  display: flex;
+  input {
+    @include accessibility;
+  }
+  .#{$inuit-btn-namespace}btn,
+  %#{$inuit-btn-namespace}btn {
+    border-radius: 0;
+    -webkit-appearance: inherit;
+    &:first-of-type {
+      border-radius: 3px 0 0 3px;
     }
+    &:last-of-type {
+      border-radius: 0 3px 3px 0;
+    }
+    + .#{$inuit-btn-namespace}btn {
+      margin-left: 0;
+    }
+  }
+  :checked + {
     .#{$inuit-btn-namespace}btn,
     %#{$inuit-btn-namespace}btn {
-      border-radius: 0;
-      -webkit-appearance: inherit;
-      &:first-of-type {
-        border-radius: 3px 0 0 3px;
-      }
-      &:last-of-type {
-        border-radius: 0 3px 3px 0;
-      }
-      + .#{$inuit-btn-namespace}btn {
-        margin-left: 0;
-      }
-    }
-    :checked + {
-      .#{$inuit-btn-namespace}btn,
-      %#{$inuit-btn-namespace}btn {
-        border-color: $inuit-btn-group-border-color;
-        box-shadow: $inuit-btn-shadow--light;
+      border-color: $inuit-btn-group-border-color;
+      box-shadow: $inuit-btn-shadow--light;
+      color: $inuit-btn-group-color;
+      background: $inuit-btn-group-background;
+      &:hover,
+      &:focus {
+        border-color: $inuit-btn-group-border-color--hover;
+        box-shadow: $inuit-btn-shadow;
         color: $inuit-btn-group-color;
-        background: $inuit-btn-group-background;
-        &:hover,
-        &:focus {
-          border-color: $inuit-btn-group-border-color--hover;
-          box-shadow: $inuit-btn-shadow;
-          color: $inuit-btn-group-color;
-          background: $inuit-btn-group-background--hover;
-        }
-        &:active {
-          border-color: $inuit-btn-group-border-color--pressed;
-          box-shadow: none;
-          color: $inuit-btn-group-color;
-          background: $inuit-btn-group-background--pressed;
-        }
+        background: $inuit-btn-group-background--hover;
+      }
+      &:active {
+        border-color: $inuit-btn-group-border-color--pressed;
+        box-shadow: none;
+        color: $inuit-btn-group-color;
+        background: $inuit-btn-group-background--pressed;
       }
     }
   }
-    
 }
