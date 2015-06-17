@@ -31,15 +31,7 @@ Install this module and its dependencies using bower:
 
 Once installed, `@import` into your project's Sass file in its Objects layer:
 
-    @import "../px-button-group-design/objects.button-group";
-
-See [px-getting-started](https://github.build.ge.com/PXd/px-getting-started#a-note-about-relative-import-paths) for an explanation of the `../`
-
-## Import once
-
-All rulesets are wrapped in the following `@if` statement:
-
-    @if import-once('objects.button-group') { ... }
+    @import "px-button-group-design/_objects.button-group.scss";
 
 ## Usage
 
