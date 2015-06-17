@@ -1,6 +1,6 @@
 {
   "name": "px-button-group-design",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Button group styles for Predix Experience",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.build.ge.com/PXd/px-button-group-design.git"
+    "url": "https://github.build.ge.com/PXd/px-button-group-design.git"
   },
   "author": "General Electric",
   "license": "Apache 2",
