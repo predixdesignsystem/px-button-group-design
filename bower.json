@@ -1,6 +1,6 @@
 {
   "name": "px-button-group-design",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "authors": [
     "General Electric"
   ],
@@ -27,6 +27,7 @@
   },
   "devDependencies" : {
     "px-code-design": "https://github.build.ge.com/PXd/px-code-design.git#~0.2.0",
+    "px-iconography-design": "https://github.build.ge.com/PXd/px-iconography-design.git#~0.2.0",
     "px-starter-kit-design": "https://github.build.ge.com/PXd/px-starter-kit-design.git#~0.4.0"
   }
 }
