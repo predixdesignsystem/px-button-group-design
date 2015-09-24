@@ -1,6 +1,6 @@
 {
   "name": "px-button-group-design",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "authors": [
     "General Electric"
   ],
@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "px-buttons-design": "https://github.com/PredixDev/px-buttons-design.git#~0.4.0",
-    "px-helpers-design": "https://github.com/PredixDev/px-helpers-design.git#~0.2.0"
+    "px-helpers-design": "https://github.com/PredixDev/px-helpers-design.git#~0.3.0"
   },
   "devDependencies" : {
     "px-code-design": "https://github.com/PredixDev/px-code-design.git#~0.2.0",
