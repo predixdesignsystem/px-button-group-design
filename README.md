@@ -2,13 +2,10 @@
 
 Predix Experience Button Group module is an implementation of button groups, either multi or unique select.
 
-## Demo
 
-You can review button group styles and recommended markup here: https://github.com/pages/PredixDev/px-button-group-design
 
-## Sass Documentation
 
-You can review Sass Documentation here: https://github.com/pages/PredixDev/px-button-group-design/sassdoc
+
 
 ## Dependencies
 
