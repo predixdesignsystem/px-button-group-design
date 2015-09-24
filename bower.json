@@ -1,0 +1,33 @@
+{
+  "name": "px-button-group-design",
+  "version": "0.3.7",
+  "authors": [
+    "General Electric"
+  ],
+  "description": "Button group styles for Predix Experience",
+  "main": "_objects.button-group.scss",
+  "keywords": [
+    "px",
+    "sass",
+    "button group"
+  ],
+  "license": "Apache 2",
+  "homepage": "https://github.com/PredixDev/px-button-group-design.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "px-buttons-design": "https://github.com/PredixDev/px-buttons-design.git#~0.4.0",
+    "px-helpers-design": "https://github.com/PredixDev/px-helpers-design.git#~0.2.0"
+  },
+  "devDependencies" : {
+    "px-code-design": "https://github.com/PredixDev/px-code-design.git#~0.2.0",
+    "px-iconography-design": "https://github.com/PredixDev/px-iconography-design.git#~0.2.0",
+    "px-starter-kit-design": "https://github.com/PredixDev/px-starter-kit-design.git#~0.4.0"
+  }
+}

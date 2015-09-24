@@ -1,0 +1,129 @@
+<!-- build:remove -->
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset=utf-8>
+    <title>Button Group</title>
+    <link rel=stylesheet href=css/style.css>
+  </head>
+  <body>
+    <section class=viewport role=region>
+      <!-- /build -->
+      <h1>Button Group</h1>
+      <div class="flex flex--justify flex--wrap flex--baseline">
+        <p>
+          To use this module, follow the instructions in the
+          <a href=https://github.com/PredixDev/px-button-group-design>README</a>.
+          <!-- build:remove -->
+          (For background on PXd, read the
+          <a href=https://github.com/PredixDev/px-getting-started>Getting Started</a>
+          documentation.)
+          <!-- /build -->
+        </p>
+        <a class="btn btn--primary" href=https://github.com/PredixDev/px-button-group-design>
+          <i class="fa fa-github u-mr--"></i>
+          px-button-group-design
+        </a>
+      </div>
+      <h2>How to Use</h2>
+      <p>Install via command line:</p>
+      <figure class="code u-mb+">
+        <code>
+          bower install --save https://github.com/PredixDev/px-button-group-design.git
+        </code>
+      </figure>
+      <p>Add to component Sass file:</p>
+      <figure class="code u-mb++">
+        <code>
+          @import "px-button-group-design/_objects.button-group.scss";
+        </code>
+      </figure>
+      <h2>Multiple Select</h2>
+      <figure class="code u-mb+">
+        <code>
+          &lt;div class=btn-group&gt;
+          <br>
+          &nbsp;&nbsp;&lt;input id=&hellip; type=checkbox&gt;
+          <br>
+          &nbsp;&nbsp;&lt;label for=&hellip; class=btn&gt;&hellip;&lt;/label&gt;
+          <br>
+          &nbsp;&nbsp;&lt;input id=&hellip; type=checkbox&gt;
+          <br>
+          &nbsp;&nbsp;&lt;label for=&hellip; class=btn&gt;&hellip;&lt;/label&gt;
+          <br>
+          &nbsp;&nbsp;&lt;input id=&hellip; type=checkbox&gt;
+          <br>
+          &nbsp;&nbsp;&lt;label for=&hellip; class=btn&gt;&hellip;&lt;/label&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </figure>
+      <div class="btn-group u-mb++">
+        <input id=btn-group-checkbox1 type=checkbox>
+        <label for=btn-group-checkbox1 class=btn>Submit</label>
+        <input id=btn-group-checkbox2 type=checkbox>
+        <label for=btn-group-checkbox2 class=btn>Submit</label>
+        <input id=btn-group-checkbox3 type=checkbox>
+        <label for=btn-group-checkbox3 class=btn>Submit</label>
+      </div>
+      <h2>Unique Select</h2>
+      <figure class="code u-mb+">
+        <code>
+          &lt;div class=btn-group&gt;
+          <br>
+          &nbsp;&nbsp;&lt;input id=&hellip; name=&hellip; type=radio&gt;
+          <br>
+          &nbsp;&nbsp;&lt;label for=&hellip; class=btn&gt;&hellip;&lt;/label&gt;
+          <br>
+          &nbsp;&nbsp;&lt;input id=&hellip; name=&hellip; type=radio&gt;
+          <br>
+          &nbsp;&nbsp;&lt;label for=&hellip; class=btn&gt;&hellip;&lt;/label&gt;
+          <br>
+          &nbsp;&nbsp;&lt;input id=&hellip; name=&hellip; type=radio&gt;
+          <br>
+          &nbsp;&nbsp;&lt;label for=&hellip; class=btn&gt;&hellip;&lt;/label&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </figure>
+      <div class="btn-group u-mb++">
+        <input id=btn-group-radio1 name=btn-group-radio type=radio>
+        <label for=btn-group-radio1 class=btn>Submit</label>
+        <input id=btn-group-radio2 name=btn-group-radio type=radio>
+        <label for=btn-group-radio2 class=btn>Submit</label>
+        <input id=btn-group-radio3 name=btn-group-radio type=radio>
+        <label for=btn-group-radio3 class=btn>Submit</label>
+      </div>
+      <h2>Disabled</h2>
+      <figure class="code u-mb+">
+        <code>
+          &lt;div class=btn-group&gt;
+          <br>
+          &nbsp;&nbsp;&lt;input id=&hellip; name=&hellip; type=radio disabled&gt;
+          <br>
+          &nbsp;&nbsp;&lt;label for=&hellip; class="btn btn--disabled"&gt;&hellip;&lt;/label&gt;
+          <br>
+          &nbsp;&nbsp;&lt;input id=&hellip; name=&hellip; type=radio disabled&gt;
+          <br>
+          &nbsp;&nbsp;&lt;label for=&hellip; class="btn btn--disabled"&gt;&hellip;&lt;/label&gt;
+          <br>
+          &nbsp;&nbsp;&lt;input id=&hellip; name=&hellip; type=radio disabled&gt;
+          <br>
+          &nbsp;&nbsp;&lt;label for=&hellip; class="btn btn--disabled"&gt;&hellip;&lt;/label&gt;
+          <br>
+          &lt;/div&gt;
+        </code>
+      </figure>
+      <div class="btn-group u-mb++">
+        <input id=btn-group-disabled1 name=btn-group-disabled type=radio disabled>
+        <label for=btn-group-disabled1 class="btn btn--disabled">Submit</label>
+        <input id=btn-group-disabled2 name=btn-group-disabled type=radio disabled>
+        <label for=btn-group-disabled2 class="btn btn--disabled">Submit</label>
+        <input id=btn-group-disabled3 name=btn-group-disabled type=radio disabled>
+        <label for=btn-group-disabled3 class="btn btn--disabled">Submit</label>
+      </div>
+    <!-- build:remove -->
+    </section>
+  </body>
+</html>
+<!-- /build -->
