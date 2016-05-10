@@ -1,15 +1,10 @@
 # Button Group
 
-Predix Experience Button Group module is an implementation of button groups, either multi or unique select.
-
-
-
-
-
+Predix UI Button Group module is an implementation of button groups, either multi or unique select.
 
 ## Dependencies
 
-Px's Button Group module depends on two other PXd modules:
+Predix UI's Button Group module depends on two other PX modules:
 
 * [px-buttons-design](https://github.com/PredixDev/px-buttons-design)
 * [px-helpers-design](https://github.com/PredixDev/px-helpers-design)
@@ -24,7 +19,7 @@ The Button Group module is also an upstream dependency in this meta kit:
 
 Install this module and its dependencies using bower:
 
-    bower install --save https://github.com/PredixDev/px-button-group-design.git
+    bower install --save px-button-group-design
 
 Once installed, `@import` into your project's Sass file in its Objects layer:
 
@@ -41,3 +36,5 @@ The following variables are available for use in the module:
     $inuit-btn-group-border-color
     $inuit-btn-group-border-color--hover
     $inuit-btn-group-border-color--pressed
+
+Please view the full API [here](http://predixdev.github.io/px-button-group-design/)
