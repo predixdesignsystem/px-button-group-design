@@ -6,33 +6,50 @@
 
 @import "inuit-responsive-tools/_tools.responsive.scss";
 @import "px-helpers-design/_generic.helpers.scss";
+$inuit-enable-btn--disabled : true;
 @import "px-buttons-design/_objects.buttons.scss";
 
-/// @type String [default] - Prepend value for all generated classes
+/// Prepend value for all generated classes
+/// @group px-button-group-design:variables:style
+/// @type String [default]
 $inuit-btn-group-namespace              : $inuit-namespace !default;
 
-/// @type Color [default] - Font color
+/// Font color
+/// @group px-button-group-design:variables:style
+/// @type Color [default]
 $inuit-btn-group-color                  : $white !default;
 
-/// @type Color [default] - Selected background color
+/// Selected background color
+/// @group px-button-group-design:variables:style
+/// @type Color [default]
 $inuit-btn-group-background             : $select-blue-default !default;
 
-/// @type Color [default] - Hover background color
+/// Hover background color
+/// @group px-button-group-design:variables:style
+/// @type Color [default]
 $inuit-btn-group-background--hover      : $select-blue-hover !default;
 
-/// @type Color [default] - Pressed background color
+/// Pressed background color
+/// @group px-button-group-design:variables:style
+/// @type Color [default]
 $inuit-btn-group-background--pressed    : $select-blue-pressed !default;
 
-/// @type Color [default] - Border color
+/// Border color
+/// @group px-button-group-design:variables:style
+/// @type Color [default]
 $inuit-btn-group-border-color           : $select-blue-pressed !default;
 
-/// @type Color [default] - Hover border color
+/// Hover border color
+/// @group px-button-group-design:variables:style
+/// @type Color [default]
 $inuit-btn-group-border-color--hover    : transparent !default;
 
-/// @type Color [default] - Pressed border color
+/// Pressed border color
+/// @group px-button-group-design:variables:style
+/// @type Color [default]
 $inuit-btn-group-border-color--pressed  : transparent !default;
 
-  
+/// Default button group
 .#{$inuit-btn-group-namespace}btn-group,
 %#{$inuit-btn-group-namespace}btn-group {
   display: flex;
