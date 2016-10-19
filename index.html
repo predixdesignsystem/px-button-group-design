@@ -52,9 +52,9 @@
 <section data-slot="demoHTML">
 <div class=btn-group>
   <input id="id1" type={{buttonGroupType}}>
-  <label for="id1" class$={{buttonClass}}>Label1</label>
+  <label for="id1" class$={{buttonClass}}>Label 1</label>
   <input id="id2" type={{buttonGroupType}}>
-  <label for="id2" class$={{buttonClass}}>Label2</label>
+  <label for="id2" class$={{buttonClass}}>Label 2</label>
 </div>
 </section>
 </template>
@@ -63,9 +63,9 @@
 <section data-slot="demoHTML">
 <div class=btn-group>
   <input id="id1" name="btn-group" type={{buttonGroupType}}>
-  <label for="id1" class$={{buttonClass}}>Label1</label>
+  <label for="id1" class$={{buttonClass}}>Label 1</label>
   <input id="id2" name="btn-group" type={{buttonGroupType}}>
-  <label for="id2" class$={{buttonClass}}>Label2</label>
+  <label for="id2" class$={{buttonClass}}>Label 2</label>
 </div>
 </section>
 </template>
@@ -77,31 +77,31 @@
 
 <!-- 5: Set Usage HTML -->
 <section data-slot="usage">
-Single Select:
 ```
-<div class=btn-group>
-  <input id=id1 name=btn-group type=radio>
-  <label for=id1 class=btn>Label1</label>
-  <input id=id2 name=btn-group type=radio>
-  <label for=id2 class=btn>Label2</label>
+<!-- Single Select -->
+<div class="btn-group">
+  <input id="id1" name="btn-group" type="radio">
+  <label for="id1" class="btn">Label1</label>
+  <input id="id2" name="btn-group" type="radio">
+  <label for="id2" class="btn">Label2</label>
 </div>
-```
-Multi Select:
-```
-<div class=btn-group>
-  <input id=id1 type=checkbox>
-  <label for=id1 class=btn>Label1</label>
-  <input id=id2 type=checkbox>
-  <label for=id2 class=btn>Label2</label>
+
+
+<!-- Multi Select -->
+<div class="btn-group">
+  <input id="id1" type="checkbox">
+  <label for="id1" class="btn">Label1</label>
+  <input id="id2" type="checkbox">
+  <label for="id2" class="btn">Label2</label>
 </div>
-```
-Disabled (can be combined with either single or multi-select):
-```
-<div class=btn-group>
-  <input id=id1 type="checkbox disabled">
-  <label for=id1 class="btn btn--disabled">Label1</label>
-  <input id=id2 type="checkbox disabled">
-  <label for=id2 class="btn btn--disabled">Label2</label>
+
+
+<!-- Disabled (can be combined with either single or multi-select) -->
+<div class="btn-group">
+  <input id="id1" type="checkbox disabled">
+  <label for="id1" class="btn btn--disabled">Label1</label>
+  <input id="id2" type="checkbox disabled">
+  <label for="id2" class="btn btn--disabled">Label2</label>
 </div>
 ```
 </section>
