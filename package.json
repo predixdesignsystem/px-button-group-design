@@ -1,6 +1,6 @@
 {
   "name": "px-button-group-design",
-  "version": "0.3.15",
+  "version": "0.3.16",
   "description": "Button group styles for Predix UI",
   "private": false,
   "scripts": {
