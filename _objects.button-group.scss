@@ -17,37 +17,37 @@ $inuit-btn-group-namespace              : $inuit-namespace !default;
 /// Font color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-color                  : $white !default;
+$inuit-btn-group-color                  : var(--px-btn-group-text-color, $white) !default;
 
 /// Selected background color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-background             : $select-blue-default !default;
+$inuit-btn-group-background             : var(--px-btn-group-background-color, $select-blue-default) !default;
 
 /// Hover background color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-background--hover      : $select-blue-hover !default;
+$inuit-btn-group-background--hover      : var(--px-btn-group-background-color--hover, $select-blue-hover) !default;
 
 /// Pressed background color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-background--pressed    : $select-blue-pressed !default;
+$inuit-btn-group-background--pressed    : var(--px-btn-group-background-color--pressed, $select-blue-pressed) !default;
 
 /// Border color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-border-color           : $select-blue-pressed !default;
+$inuit-btn-group-border-color           : var(--px-btn-group-border-color, $select-blue-pressed) !default;
 
 /// Hover border color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-border-color--hover    : transparent !default;
+$inuit-btn-group-border-color--hover    : var(--px-btn-group-border-color--hover, transparent) !default;
 
 /// Pressed border color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-border-color--pressed  : transparent !default;
+$inuit-btn-group-border-color--pressed  : var(--px-btn-group-border-color--pressed, transparent) !default;
 
 /// Default button group
 .#{$inuit-btn-group-namespace}btn-group,
