@@ -1,3 +1,7 @@
+v1.0.1
+==================
+* Move to style modules and service worker for demo page.
+
 v1.0.0
 ==================
 * Reintroduce CSS style variables
