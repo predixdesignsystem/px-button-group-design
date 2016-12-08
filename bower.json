@@ -1,6 +1,6 @@
 {
     "name": "px-button-group-design",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "authors": [
         "General Electric"
     ],
@@ -20,11 +20,11 @@
         "sass"
     ],
     "dependencies": {
-        "px-buttons-design": "~0.4.0",
-        "px-helpers-design": "~0.3.0"
+        "px-buttons-design": "~1.0.3",
+        "px-helpers-design": "~0.3.15"
     },
     "devDependencies": {
-        "px-sass-doc": "^0.2.10",
-        "px-starter-kit-design": "~0.6.0"
+        "px-sass-doc": "^0.2.14",
+        "px-starter-kit-design": "~0.6.5"
     }
 }

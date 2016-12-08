@@ -1,6 +1,10 @@
+v1.0.2
+==================
+* Upgrade to latest deps
+
 v1.0.1
 ==================
-* Move to style modules and service worker for demo page.
+* Move to style modules and service worker for demo page
 
 v1.0.0
 ==================
@@ -48,7 +52,7 @@ v0.3.12
 
 v0.3.11
 ==============================
-* Added OSS notice and changed the repo to be public in bower.
+* Added OSS notice and changed the repo to be public in bower
 
 v0.3.10
 ==============================
