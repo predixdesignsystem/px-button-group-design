@@ -1,3 +1,7 @@
+v1.0.3
+==================
+* Updated dependencies
+
 v1.0.2
 ==================
 * Upgrade to latest deps
