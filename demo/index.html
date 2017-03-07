@@ -7,7 +7,7 @@
 
 <!-- Demo DOM module -->
 <dom-module id="local-element-demo">
-  <template>  
+  <template>
   <!-- 0: Import the styles-->
   <style include="px-button-group-design-demo-styles" is="custom-style"></style>
 
@@ -21,9 +21,24 @@
     "https://github.com/PredixDev/px-buttons-design",
     "https://github.com/PredixDev/px-helpers-design"
   ]'
-  selected-options="{{selectedOptions}}">
+  selected-options="{{selectedOptions}}"
+  tabs='["Single select","Multi select"]'
+  selected-tab="{{selectedTab}}">
 
 <!-- 2: Set Options -->
+<template is="dom-if" if="{{_tabIs('Multi select', selectedTab)}}" restamp>
+<px-sass-doc-option
+  option-name="Type"
+  choose-with="dropdown"
+  choices='[
+    "single select",
+    "multi select"
+  ]'
+  default-choice="multi select">
+</px-sass-doc-option>
+</template>
+
+<template is="dom-if" if="{{_tabIs('Single select', selectedTab)}}" restamp>
 <px-sass-doc-option
   option-name="Type"
   choose-with="dropdown"
@@ -33,6 +48,7 @@
   ]'
   default-choice="single select">
 </px-sass-doc-option>
+</template>
 
 <px-sass-doc-option
   option-name="Disabled"
@@ -40,7 +56,7 @@
 </px-sass-doc-option>
 
 <!-- 3: Make HTML Demo -->
-<template is="dom-if" if="{{isMulti(selectedOptions.Type)}}" restamp>
+<template is="dom-if" if="{{_tabIs('Multi select', selectedTab)}}" restamp>
 <section data-slot="demoHTML">
 <div class=btn-group>
   <input id="id1" type={{buttonGroupType}}>
@@ -51,7 +67,7 @@
 </section>
 </template>
 
-<template is="dom-if" if="{{!isMulti(selectedOptions.Type)}}" restamp>
+<template is="dom-if" if="{{_tabIs('Single select', selectedTab)}}" restamp>
 <section data-slot="demoHTML">
 <div class=btn-group>
   <input id="id1" name="btn-group" type={{buttonGroupType}}>
@@ -109,10 +125,10 @@
     is: 'local-element-demo',
 
     attached : function(){
-      var boundHandler = this._handleOptionsUpdated.bind(this); 
+      var boundHandler = this._handleOptionsUpdated.bind(this);
       this.addEventListener('px-sass-doc-options-updated', boundHandler)
     },
-    
+
     detached : function(){
       this.removeEventListener('px-sass-doc-options-updated', boundHandler);
     },
@@ -144,10 +160,9 @@
       return '@import "px-button-group-design/_objects.button-group.scss";';
     },
 
-    isMulti : function() {
-      var opts = this.selectedOptions || {};
-      if (opts.Type === "multi select") return true;
-      return false;
+    _tabIs : function(tabName) {
+      var selected = this.selectedTab || "";
+      return selected === tabName;
     }
 
   });

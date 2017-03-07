@@ -1,3 +1,7 @@
+v1.0.7
+==================
+* add example to demo (#1)
+
 v1.0.6
 ==================
 * Update to new demo using px-demo
