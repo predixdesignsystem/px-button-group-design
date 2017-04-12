@@ -1,17 +1,17 @@
 [
     {
-        "description": "Default button group  \n",
+        "description": "Default button group\n",
         "commentRange": {
-            "start": 51,
-            "end": 51
+            "start": 52,
+            "end": 52
         },
         "context": {
             "type": "css",
-            "name": ".#",
-            "value": "$inuit-btn-group-namespace",
+            "name": ".#{$inuit-btn-group-namespace}btn-group,\n%#{$inuit-btn-group-namespace}btn-group",
+            "value": "display: flex;\n  input {\n    @include accessibility;\n  }\n  .#{$inuit-btn-namespace}btn,\n  %#{$inuit-btn-namespace}btn {\n    border-radius: 0;\n    -webkit-appearance: inherit;\n    border-radius: 0;\n    ~ .#{$inuit-btn-namespace}btn {\n      margin-left: 1px;\n    }\n  }\n  :checked + {\n    .#{$inuit-btn-namespace}btn,\n    %#{$inuit-btn-namespace}btn {\n      border-color: $inuit-btn-group-border-color;\n      box-shadow: $inuit-btn-shadow--light;\n      color: $inuit-btn-group-color;\n      background: $inuit-btn-group-background;\n      &:hover,\n      &:focus {\n        border-color: $inuit-btn-group-border-color--hover;\n        box-shadow: $inuit-btn-shadow;\n        color: $inuit-btn-group-color;\n        background: $inuit-btn-group-background--hover;\n      }\n      &:active {\n        border-color: $inuit-btn-group-border-color--pressed;\n        box-shadow: none;\n        color: $inuit-btn-group-color;\n        background: $inuit-btn-group-background--pressed;\n      }\n    }\n  }",
             "line": {
-                "start": 52,
-                "end": 95
+                "start": 54,
+                "end": 91
             }
         },
         "group": [
@@ -26,8 +26,8 @@
     {
         "description": "Prepend value for all generated classes\n",
         "commentRange": {
-            "start": 11,
-            "end": 13
+            "start": 12,
+            "end": 14
         },
         "context": {
             "type": "variable",
@@ -35,8 +35,8 @@
             "value": "$inuit-namespace",
             "scope": "default",
             "line": {
-                "start": 14,
-                "end": 14
+                "start": 15,
+                "end": 15
             }
         },
         "group": [
@@ -52,17 +52,17 @@
     {
         "description": "Font color\n",
         "commentRange": {
-            "start": 16,
-            "end": 18
+            "start": 17,
+            "end": 19
         },
         "context": {
             "type": "variable",
             "name": "inuit-btn-group-color",
-            "value": "$white",
+            "value": "var(--px-btn-group-text-color, $white)",
             "scope": "default",
             "line": {
-                "start": 19,
-                "end": 19
+                "start": 20,
+                "end": 20
             }
         },
         "group": [
@@ -78,17 +78,17 @@
     {
         "description": "Selected background color\n",
         "commentRange": {
-            "start": 21,
-            "end": 23
+            "start": 22,
+            "end": 24
         },
         "context": {
             "type": "variable",
             "name": "inuit-btn-group-background",
-            "value": "$select-blue-default",
+            "value": "var(--px-btn-group-background-color, $select-default)",
             "scope": "default",
             "line": {
-                "start": 24,
-                "end": 24
+                "start": 25,
+                "end": 25
             }
         },
         "group": [
@@ -104,17 +104,17 @@
     {
         "description": "Hover background color\n",
         "commentRange": {
-            "start": 26,
-            "end": 28
+            "start": 27,
+            "end": 29
         },
         "context": {
             "type": "variable",
             "name": "inuit-btn-group-background--hover",
-            "value": "$select-blue-hover",
+            "value": "var(--px-btn-group-background-color--hover, $select-hover)",
             "scope": "default",
             "line": {
-                "start": 29,
-                "end": 29
+                "start": 30,
+                "end": 30
             }
         },
         "group": [
@@ -130,17 +130,17 @@
     {
         "description": "Pressed background color\n",
         "commentRange": {
-            "start": 31,
-            "end": 33
+            "start": 32,
+            "end": 34
         },
         "context": {
             "type": "variable",
             "name": "inuit-btn-group-background--pressed",
-            "value": "$select-blue-pressed",
+            "value": "var(--px-btn-group-background-color--pressed, $select-pressed)",
             "scope": "default",
             "line": {
-                "start": 34,
-                "end": 34
+                "start": 35,
+                "end": 35
             }
         },
         "group": [
@@ -156,17 +156,17 @@
     {
         "description": "Border color\n",
         "commentRange": {
-            "start": 36,
-            "end": 38
+            "start": 37,
+            "end": 39
         },
         "context": {
             "type": "variable",
             "name": "inuit-btn-group-border-color",
-            "value": "$select-blue-pressed",
+            "value": "var(--px-btn-group-border-color, transparent)",
             "scope": "default",
             "line": {
-                "start": 39,
-                "end": 39
+                "start": 40,
+                "end": 40
             }
         },
         "group": [
@@ -182,17 +182,17 @@
     {
         "description": "Hover border color\n",
         "commentRange": {
-            "start": 41,
-            "end": 43
+            "start": 42,
+            "end": 44
         },
         "context": {
             "type": "variable",
             "name": "inuit-btn-group-border-color--hover",
-            "value": "transparent",
+            "value": "var(--px-btn-group-border-color--hover, transparent)",
             "scope": "default",
             "line": {
-                "start": 44,
-                "end": 44
+                "start": 45,
+                "end": 45
             }
         },
         "group": [
@@ -208,17 +208,17 @@
     {
         "description": "Pressed border color\n",
         "commentRange": {
-            "start": 46,
-            "end": 48
+            "start": 47,
+            "end": 49
         },
         "context": {
             "type": "variable",
             "name": "inuit-btn-group-border-color--pressed",
-            "value": "transparent",
+            "value": "var(--px-btn-group-border-color--pressed, transparent)",
             "scope": "default",
             "line": {
-                "start": 49,
-                "end": 49
+                "start": 50,
+                "end": 50
             }
         },
         "group": [

@@ -1,3 +1,7 @@
+v2.0.1
+==================
+* update sassdoc.json for demo page
+
 v2.0.0
 ==================
 * implementation of redesign and new dependencies
