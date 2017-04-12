@@ -1,3 +1,7 @@
+v2.0.0
+==================
+* implementation of redesign and new dependencies
+
 v1.0.7
 ==================
 * add example to demo (#1)

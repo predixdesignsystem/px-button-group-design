@@ -22,22 +22,22 @@ $inuit-btn-group-color                  : var(--px-btn-group-text-color, $white)
 /// Selected background color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-background             : var(--px-btn-group-background-color, $select-blue-default) !default;
+$inuit-btn-group-background             : var(--px-btn-group-background-color, $select-default) !default;
 
 /// Hover background color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-background--hover      : var(--px-btn-group-background-color--hover, $select-blue-hover) !default;
+$inuit-btn-group-background--hover      : var(--px-btn-group-background-color--hover, $select-hover) !default;
 
 /// Pressed background color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-background--pressed    : var(--px-btn-group-background-color--pressed, $select-blue-pressed) !default;
+$inuit-btn-group-background--pressed    : var(--px-btn-group-background-color--pressed, $select-pressed) !default;
 
 /// Border color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
-$inuit-btn-group-border-color           : var(--px-btn-group-border-color, $select-blue-pressed) !default;
+$inuit-btn-group-border-color           : var(--px-btn-group-border-color, transparent) !default;
 
 /// Hover border color
 /// @group px-button-group-design:variables:style
@@ -60,14 +60,9 @@ $inuit-btn-group-border-color--pressed  : var(--px-btn-group-border-color--press
   %#{$inuit-btn-namespace}btn {
     border-radius: 0;
     -webkit-appearance: inherit;
-    &:first-of-type {
-      border-radius: 3px 0 0 3px;
-    }
-    &:last-of-type {
-      border-radius: 0 3px 3px 0;
-    }
-    + .#{$inuit-btn-namespace}btn {
-      margin-left: 0;
+    border-radius: 0;
+    ~ .#{$inuit-btn-namespace}btn {
+      margin-left: 1px;
     }
   }
   :checked + {
