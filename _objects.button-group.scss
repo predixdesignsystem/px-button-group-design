@@ -86,5 +86,9 @@ $inuit-btn-group-border-color--pressed  : var(--px-btn-group-border-color--press
         background: $inuit-btn-group-background--pressed;
       }
     }
+    .btn--disabled {
+      border-color: var(--px-btn-disabled-border-color, $inuit-btn-disabled-border-color);
+      border: $inuit-btn-disabled-border;
+    }
   }
 }

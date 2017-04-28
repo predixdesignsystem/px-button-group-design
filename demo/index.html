@@ -137,7 +137,6 @@
       this.importCode = this._importCode();
       this.buttonGroupType = this._buttonGroupType();
       this.buttonClass = this._buttonClass();
-
       // Wait, then tell the highlighter to run after dom-if restamps
       this.async(function(){ this.fire('px-sass-doc-demo-updated', {}) }, 10);
     },
@@ -146,7 +145,6 @@
       var opts = this.selectedOptions || {}, strings = [];
       if (opts.Type === "single select")  strings.push("radio");
       if (opts.Type === "multi select")   strings.push("checkbox");
-      if (opts.Disabled === true)         strings.push("disabled");
       return strings.join(" ").trim();
     },
 
