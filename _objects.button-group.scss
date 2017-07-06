@@ -4,6 +4,7 @@
 /// @group px-button-group-design
 ////
 
+@import "inuit-responsive-settings/_settings.responsive.scss";
 @import "inuit-responsive-tools/_tools.responsive.scss";
 @import "px-helpers-design/_generic.helpers.scss";
 $inuit-enable-btn--disabled : true;
