@@ -1,6 +1,6 @@
-# Button Group
+# px-button-group-design
 
-Predix UI Button Group module is an implementation of button groups, either multi or unique select.
+The px-button-group-design module is an implementation of button groups, either multi or unique select.
 
 ## Dependencies
 
