@@ -1,17 +1,17 @@
 # px-button-group-design
 
-The px-button-group-design module is an implementation of button groups, either multi or unique select.
+The Predix UI Button Group module is an implementation of button groups, either multi or unique select.
 
 ## Dependencies
 
-Predix UI's Button Group module depends on two other PX modules:
+The `px-button-group-design` module depends on two other PX modules:
 
 * [px-buttons-design](https://github.com/PredixDev/px-buttons-design)
 * [px-helpers-design](https://github.com/PredixDev/px-helpers-design)
 
 ## Upstream dependency
 
-The Button Group module is also an upstream dependency in this meta kit:
+The `px-button-group-design` module is also an upstream dependency in this meta kit:
 
 * [px-meta-buttons-design](https://github.com/PredixDev/px-meta-buttons-design)
 
