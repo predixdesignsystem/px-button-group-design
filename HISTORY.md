@@ -1,3 +1,7 @@
+v2.0.1
+==================
+* turn off 'disabled' on demo page by default
+
 v2.0.0
 ==================
 * update sassdoc.json for demo page
