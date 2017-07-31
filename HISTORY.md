@@ -1,3 +1,7 @@
+v2.0.2
+==================
+* simplify demo
+
 v2.0.1
 ==================
 * turn off 'disabled' on demo page by default

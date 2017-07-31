@@ -22,23 +22,10 @@
     "https://github.com/PredixDev/px-helpers-design"
   ]'
   selected-options="{{selectedOptions}}"
-  tabs='["Single select","Multi select"]'
-  selected-tab="{{selectedTab}}">
+  tabs='["Default"]'>
 
 <!-- 2: Set Options -->
-<template is="dom-if" if="{{_tabIs('Multi select', selectedTab)}}" restamp>
-<px-sass-doc-option
-  option-name="Type"
-  choose-with="dropdown"
-  choices='[
-    "single select",
-    "multi select"
-  ]'
-  default-choice="multi select">
-</px-sass-doc-option>
-</template>
 
-<template is="dom-if" if="{{_tabIs('Single select', selectedTab)}}" restamp>
 <px-sass-doc-option
   option-name="Type"
   choose-with="dropdown"
@@ -48,7 +35,6 @@
   ]'
   default-choice="single select">
 </px-sass-doc-option>
-</template>
 
 <px-sass-doc-option
   option-name="Disabled"
@@ -57,18 +43,7 @@
 </px-sass-doc-option>
 
 <!-- 3: Make HTML Demo -->
-<template is="dom-if" if="{{_tabIs('Multi select', selectedTab)}}" restamp>
-<section data-slot="demoHTML">
-<div class=btn-group>
-  <input id="id1" type={{buttonGroupType}}>
-  <label for="id1" class$={{buttonClass}}>Label 1</label>
-  <input id="id2" type={{buttonGroupType}}>
-  <label for="id2" class$={{buttonClass}}>Label 2</label>
-</div>
-</section>
-</template>
 
-<template is="dom-if" if="{{_tabIs('Single select', selectedTab)}}" restamp>
 <section data-slot="demoHTML">
 <div class=btn-group>
   <input id="id1" name="btn-group" type={{buttonGroupType}}>
@@ -77,7 +52,6 @@
   <label for="id2" class$={{buttonClass}}>Label 2</label>
 </div>
 </section>
-</template>
 
 <!-- 4: Set Import Slot -->
 <section data-slot="import">
@@ -157,11 +131,6 @@
 
     _importCode : function() {
       return '@import "px-button-group-design/_objects.button-group.scss";';
-    },
-
-    _tabIs : function(tabName) {
-      var selected = this.selectedTab || "";
-      return selected === tabName;
     }
 
   });
