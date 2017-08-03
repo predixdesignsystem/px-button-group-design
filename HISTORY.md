@@ -1,3 +1,7 @@
+v2.0.3
+==================
+* remove hover/pressed from selected buttons
+
 v2.0.2
 ==================
 * simplify demo

@@ -28,35 +28,11 @@ $inuit-btn-group-color                  : var(--px-btn-group-text-color, $white)
 /// @todo --px-btn-group-background-color
 $inuit-btn-group-background             : var(--px-btn-group-background-color, $select-default) !default;
 
-/// Hover background color
-/// @group px-button-group-design:variables:style
-/// @type Color [default]
-/// @todo --px-btn-group-background-color--hover
-$inuit-btn-group-background--hover      : var(--px-btn-group-background-color--hover, $select-hover) !default;
-
-/// Pressed background color
-/// @group px-button-group-design:variables:style
-/// @type Color [default]
-/// @todo --px-btn-group-background-color--pressed
-$inuit-btn-group-background--pressed    : var(--px-btn-group-background-color--pressed, $select-pressed) !default;
-
 /// Border color
 /// @group px-button-group-design:variables:style
 /// @type Color [default]
 /// @todo --px-btn-group-border-color
 $inuit-btn-group-border-color           : var(--px-btn-group-border-color, transparent) !default;
-
-/// Hover border color
-/// @group px-button-group-design:variables:style
-/// @type Color [default]
-/// @todo --px-btn-group-border-color--hover
-$inuit-btn-group-border-color--hover    : var(--px-btn-group-border-color--hover, transparent) !default;
-
-/// Pressed border color
-/// @group px-button-group-design:variables:style
-/// @type Color [default]
-/// @todo --px-btn-group-border-color--pressed
-$inuit-btn-group-border-color--pressed  : var(--px-btn-group-border-color--pressed, transparent) !default;
 
 /// Default button group
 .#{$inuit-btn-group-namespace}btn-group,
@@ -81,19 +57,6 @@ $inuit-btn-group-border-color--pressed  : var(--px-btn-group-border-color--press
       box-shadow: $inuit-btn-shadow--light;
       color: $inuit-btn-group-color;
       background: $inuit-btn-group-background;
-      &:hover,
-      &:focus {
-        border-color: $inuit-btn-group-border-color--hover;
-        box-shadow: $inuit-btn-shadow;
-        color: $inuit-btn-group-color;
-        background: $inuit-btn-group-background--hover;
-      }
-      &:active {
-        border-color: $inuit-btn-group-border-color--pressed;
-        box-shadow: none;
-        color: $inuit-btn-group-color;
-        background: $inuit-btn-group-background--pressed;
-      }
     }
     .btn--disabled {
       border-color: $inuit-btn-disabled-border-color;

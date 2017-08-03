@@ -2,16 +2,16 @@
     {
         "description": "Default button group\n",
         "commentRange": {
-            "start": 60,
-            "end": 60
+            "start": 37,
+            "end": 37
         },
         "context": {
             "type": "css",
             "name": ".#{$inuit-btn-group-namespace}btn-group,\n%#{$inuit-btn-group-namespace}btn-group",
-            "value": "display: flex;\n  input {\n    @include accessibility;\n  }\n  .#{$inuit-btn-namespace}btn,\n  %#{$inuit-btn-namespace}btn {\n    border-radius: 0;\n    -webkit-appearance: inherit;\n    border-radius: 0;\n    ~ .#{$inuit-btn-namespace}btn {\n      margin-left: 1px;\n    }\n  }\n  :checked + {\n    .#{$inuit-btn-namespace}btn,\n    %#{$inuit-btn-namespace}btn {\n      border-color: $inuit-btn-group-border-color;\n      box-shadow: $inuit-btn-shadow--light;\n      color: $inuit-btn-group-color;\n      background: $inuit-btn-group-background;\n      &:hover,\n      &:focus {\n        border-color: $inuit-btn-group-border-color--hover;\n        box-shadow: $inuit-btn-shadow;\n        color: $inuit-btn-group-color;\n        background: $inuit-btn-group-background--hover;\n      }\n      &:active {\n        border-color: $inuit-btn-group-border-color--pressed;\n        box-shadow: none;\n        color: $inuit-btn-group-color;\n        background: $inuit-btn-group-background--pressed;\n      }\n    }\n    .btn--disabled {\n      border-color: $inuit-btn-disabled-border-color;\n      border: $inuit-btn-disabled-border;\n    }\n  }",
+            "value": "display: flex;\n  input {\n    @include accessibility;\n  }\n  .#{$inuit-btn-namespace}btn,\n  %#{$inuit-btn-namespace}btn {\n    border-radius: 0;\n    -webkit-appearance: inherit;\n    border-radius: 0;\n    ~ .#{$inuit-btn-namespace}btn {\n      margin-left: 1px;\n    }\n  }\n  :checked + {\n    .#{$inuit-btn-namespace}btn,\n    %#{$inuit-btn-namespace}btn {\n      border-color: $inuit-btn-group-border-color;\n      box-shadow: $inuit-btn-shadow--light;\n      color: $inuit-btn-group-color;\n      background: $inuit-btn-group-background;\n    }\n    .btn--disabled {\n      border-color: $inuit-btn-disabled-border-color;\n      border: $inuit-btn-disabled-border;\n    }\n  }",
             "line": {
-                "start": 62,
-                "end": 103
+                "start": 39,
+                "end": 67
             }
         },
         "group": [
@@ -26,8 +26,8 @@
     {
         "description": "Prepend value for all generated classes\n",
         "commentRange": {
-            "start": 12,
-            "end": 15
+            "start": 13,
+            "end": 16
         },
         "context": {
             "type": "variable",
@@ -35,8 +35,8 @@
             "value": "$inuit-namespace",
             "scope": "default",
             "line": {
-                "start": 16,
-                "end": 16
+                "start": 17,
+                "end": 17
             }
         },
         "group": [
@@ -55,8 +55,8 @@
     {
         "description": "Font color\n",
         "commentRange": {
-            "start": 18,
-            "end": 21
+            "start": 19,
+            "end": 22
         },
         "context": {
             "type": "variable",
@@ -64,8 +64,8 @@
             "value": "var(--px-btn-group-text-color, $white)",
             "scope": "default",
             "line": {
-                "start": 22,
-                "end": 22
+                "start": 23,
+                "end": 23
             }
         },
         "group": [
@@ -84,8 +84,8 @@
     {
         "description": "Selected background color\n",
         "commentRange": {
-            "start": 24,
-            "end": 27
+            "start": 25,
+            "end": 28
         },
         "context": {
             "type": "variable",
@@ -93,8 +93,8 @@
             "value": "var(--px-btn-group-background-color, $select-default)",
             "scope": "default",
             "line": {
-                "start": 28,
-                "end": 28
+                "start": 29,
+                "end": 29
             }
         },
         "group": [
@@ -111,68 +111,10 @@
         }
     },
     {
-        "description": "Hover background color\n",
-        "commentRange": {
-            "start": 30,
-            "end": 33
-        },
-        "context": {
-            "type": "variable",
-            "name": "inuit-btn-group-background--hover",
-            "value": "var(--px-btn-group-background-color--hover, $select-hover)",
-            "scope": "default",
-            "line": {
-                "start": 34,
-                "end": 34
-            }
-        },
-        "group": [
-            "px-button-group-design:variables:style"
-        ],
-        "type": "Color [default]",
-        "todo": [
-            "--px-btn-group-background-color--hover"
-        ],
-        "access": "public",
-        "file": {
-            "path": "_objects.button-group.scss",
-            "name": "_objects.button-group.scss"
-        }
-    },
-    {
-        "description": "Pressed background color\n",
-        "commentRange": {
-            "start": 36,
-            "end": 39
-        },
-        "context": {
-            "type": "variable",
-            "name": "inuit-btn-group-background--pressed",
-            "value": "var(--px-btn-group-background-color--pressed, $select-pressed)",
-            "scope": "default",
-            "line": {
-                "start": 40,
-                "end": 40
-            }
-        },
-        "group": [
-            "px-button-group-design:variables:style"
-        ],
-        "type": "Color [default]",
-        "todo": [
-            "--px-btn-group-background-color--pressed"
-        ],
-        "access": "public",
-        "file": {
-            "path": "_objects.button-group.scss",
-            "name": "_objects.button-group.scss"
-        }
-    },
-    {
         "description": "Border color\n",
         "commentRange": {
-            "start": 42,
-            "end": 45
+            "start": 31,
+            "end": 34
         },
         "context": {
             "type": "variable",
@@ -180,8 +122,8 @@
             "value": "var(--px-btn-group-border-color, transparent)",
             "scope": "default",
             "line": {
-                "start": 46,
-                "end": 46
+                "start": 35,
+                "end": 35
             }
         },
         "group": [
@@ -190,64 +132,6 @@
         "type": "Color [default]",
         "todo": [
             "--px-btn-group-border-color"
-        ],
-        "access": "public",
-        "file": {
-            "path": "_objects.button-group.scss",
-            "name": "_objects.button-group.scss"
-        }
-    },
-    {
-        "description": "Hover border color\n",
-        "commentRange": {
-            "start": 48,
-            "end": 51
-        },
-        "context": {
-            "type": "variable",
-            "name": "inuit-btn-group-border-color--hover",
-            "value": "var(--px-btn-group-border-color--hover, transparent)",
-            "scope": "default",
-            "line": {
-                "start": 52,
-                "end": 52
-            }
-        },
-        "group": [
-            "px-button-group-design:variables:style"
-        ],
-        "type": "Color [default]",
-        "todo": [
-            "--px-btn-group-border-color--hover"
-        ],
-        "access": "public",
-        "file": {
-            "path": "_objects.button-group.scss",
-            "name": "_objects.button-group.scss"
-        }
-    },
-    {
-        "description": "Pressed border color\n",
-        "commentRange": {
-            "start": 54,
-            "end": 57
-        },
-        "context": {
-            "type": "variable",
-            "name": "inuit-btn-group-border-color--pressed",
-            "value": "var(--px-btn-group-border-color--pressed, transparent)",
-            "scope": "default",
-            "line": {
-                "start": 58,
-                "end": 58
-            }
-        },
-        "group": [
-            "px-button-group-design:variables:style"
-        ],
-        "type": "Color [default]",
-        "todo": [
-            "--px-btn-group-border-color--pressed"
         ],
         "access": "public",
         "file": {
