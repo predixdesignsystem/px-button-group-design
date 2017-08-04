@@ -6,7 +6,7 @@
   <link rel="import" href="../css/px-button-group-design-demo-styles.html" />
 
 <!-- Demo DOM module -->
-<dom-module id="local-element-demo">
+<dom-module id="px-button-group-design-demo">
   <template>
   <!-- 0: Import the styles-->
   <style include="px-button-group-design-demo-styles" is="custom-style"></style>
@@ -97,7 +97,7 @@
 <!-- 6: Handle selectedOptions, update demo -->
 <script>
   Polymer({
-    is: 'local-element-demo',
+    is: 'px-button-group-design-demo',
 
     attached : function(){
       var boundHandler = this._handleOptionsUpdated.bind(this);
