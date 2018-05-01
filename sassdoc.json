@@ -2,16 +2,16 @@
     {
         "description": "Default button group\n",
         "commentRange": {
-            "start": 37,
-            "end": 37
+            "start": 53,
+            "end": 53
         },
         "context": {
             "type": "css",
             "name": ".#{$inuit-btn-group-namespace}btn-group,\n%#{$inuit-btn-group-namespace}btn-group",
             "value": "display: flex;\n  input {\n    @include accessibility;\n  }\n  .#{$inuit-btn-namespace}btn,\n  %#{$inuit-btn-namespace}btn {\n    border-radius: 0;\n    -webkit-appearance: inherit;\n    border-radius: 0;\n    ~ .#{$inuit-btn-namespace}btn {\n      margin-left: 1px;\n    }\n  }\n  :checked + {\n    .#{$inuit-btn-namespace}btn,\n    %#{$inuit-btn-namespace}btn {\n      border-color: $inuit-btn-group-border-color;\n      box-shadow: $inuit-btn-shadow--light;\n      color: $inuit-btn-group-color;\n      background: $inuit-btn-group-background;\n    }\n    .btn--disabled {\n      border-color: $inuit-btn-disabled-border-color;\n      border: $inuit-btn-disabled-border;\n    }\n  }",
             "line": {
-                "start": 39,
-                "end": 67
+                "start": 55,
+                "end": 83
             }
         },
         "group": [
@@ -26,8 +26,8 @@
     {
         "description": "Prepend value for all generated classes\n",
         "commentRange": {
-            "start": 13,
-            "end": 16
+            "start": 29,
+            "end": 32
         },
         "context": {
             "type": "variable",
@@ -35,8 +35,8 @@
             "value": "$inuit-namespace",
             "scope": "default",
             "line": {
-                "start": 17,
-                "end": 17
+                "start": 33,
+                "end": 33
             }
         },
         "group": [
@@ -55,8 +55,8 @@
     {
         "description": "Font color\n",
         "commentRange": {
-            "start": 19,
-            "end": 22
+            "start": 35,
+            "end": 38
         },
         "context": {
             "type": "variable",
@@ -64,8 +64,8 @@
             "value": "var(--px-btn-group-text-color, $white)",
             "scope": "default",
             "line": {
-                "start": 23,
-                "end": 23
+                "start": 39,
+                "end": 39
             }
         },
         "group": [
@@ -84,8 +84,8 @@
     {
         "description": "Selected background color\n",
         "commentRange": {
-            "start": 25,
-            "end": 28
+            "start": 41,
+            "end": 44
         },
         "context": {
             "type": "variable",
@@ -93,8 +93,8 @@
             "value": "var(--px-btn-group-background-color, $select-default)",
             "scope": "default",
             "line": {
-                "start": 29,
-                "end": 29
+                "start": 45,
+                "end": 45
             }
         },
         "group": [
@@ -113,8 +113,8 @@
     {
         "description": "Border color\n",
         "commentRange": {
-            "start": 31,
-            "end": 34
+            "start": 47,
+            "end": 50
         },
         "context": {
             "type": "variable",
@@ -122,8 +122,8 @@
             "value": "var(--px-btn-group-border-color, transparent)",
             "scope": "default",
             "line": {
-                "start": 35,
-                "end": 35
+                "start": 51,
+                "end": 51
             }
         },
         "group": [
